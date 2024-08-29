@@ -44,7 +44,7 @@ body {
 .card-kira {
   background-color: var(--white);
   color: var(--very-dark-blackish-blue);
-  box-shadow: 0 5px 5px var(--very-dark-grayish-blue);
+  box-shadow: 0 5px 5px hsl(216, 13.5%, 85.5%);
 }
 
 .card-jeanette .description,

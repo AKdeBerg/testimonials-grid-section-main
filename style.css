@@ -44,6 +44,7 @@ body {
 .card-kira {
   background-color: var(--white);
   color: var(--very-dark-blackish-blue);
+  box-shadow: 0 5px 5px var(--very-dark-grayish-blue);
 }
 
 .card-jeanette .description,
@@ -87,4 +88,38 @@ body {
   font-size: 0.8rem;
   line-height: 1.5;
   color: var(--light-gray);
+}
+
+@media (min-width: 950px) {
+  body {
+    height: 100vh;
+  }
+
+  .card-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: auto;
+    max-width: 1110px;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  .card-daniel {
+    grid-column: span 2;
+  }
+
+  .card-kira {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+
+  .card-patrick {
+    grid-column: span 2;
+  }
 }
